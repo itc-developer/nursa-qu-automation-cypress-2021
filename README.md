@@ -1,1 +1,1 @@
-# nursa-qu-automation-cypress-2021
+# nursa-qa-automation-cypress-2021
