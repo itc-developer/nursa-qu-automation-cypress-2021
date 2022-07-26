@@ -1,0 +1,14 @@
+Cypress.Commands.add('token', (email, password) => {
+    cy.request({
+        method: 'POST',
+        url: 'https://demo.sylius.com/api/v2/admin/authentication-token',
+        body: {
+            "email": email,
+            "password": password
+          }
+        }).then((response) => {
+            expect(response.status).to.equal(200)
+            return response.body.token
+            
+        })
+})
