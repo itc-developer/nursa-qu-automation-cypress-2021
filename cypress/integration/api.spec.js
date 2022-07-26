@@ -13,7 +13,10 @@ describe('API', () => {
         cy.request({
             method: 'POST',
             url: 'https://demo.sylius.com/api/v2/shop/addresses',
-            // headers: {authorization: token},
+            headers: {
+                accept: "application/ld+json", 
+                Authorization: token
+                },
             body: {
                 "firstName": "Gabriela",
                 "lastName": "Mattesco",
