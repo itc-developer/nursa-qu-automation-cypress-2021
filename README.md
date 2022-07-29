@@ -1,10 +1,10 @@
 # Nursa_webtest & API test - Cypress 2022
 
-<a href="#description">Description</a> 
-<a href="#functionalities">Functionalities</a>
-<a href="#runtests">Run Tests</a> 
-<a href="#projectstatus">Project Status</a> 
-<a href="#author">Author</a> 
+<a href="#description">Description  </a> 
+<a href="#functionalities">Functionalities  </a>
+<a href="#runtests">Run Tests  </a> 
+<a href="#projectstatus">Projects Status  </a> 
+<a href="#author">Author  </a> 
 
 # Tests
 The tests were written using JavaScript language
@@ -23,6 +23,8 @@ The tests were written using JavaScript language
 - support > page_objects > address.page
 - support > commands
 - Faker (emailfaker)
+
+___________________________________________________________________________
 
 # API_test
 # Project description - Step by step:
@@ -43,8 +45,10 @@ Run one of the commands below to run the tests. Examples:
 - To run the tests on the terminal, execute npx cypress run
 - To generate the report, execute npm run cy:report or visit https://dashboard.cypress.io/projects/tdz1x7/runs/2/overview
 
-# Project status: Done
-# Author: Gabriela Mattesco [See my LinkedIn](www.linkedin.com/in/gabrielamattesco/)
+# Projects status:
+Done
+# Author: 
+Gabriela Mattesco [See my LinkedIn](www.linkedin.com/in/gabrielamattesco)
 
 
 
