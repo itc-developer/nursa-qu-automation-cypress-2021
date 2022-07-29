@@ -1,13 +1,15 @@
-# nursa-qa-automation-cypress-2022
-# e2e - nursa_test & API test
+# Nursa_webtest & API test - Cypress 2022
 
-<a href="#description">Description</a> .
+<a href="#description">Description</a> 
+<a href="#functionalities">Functionalities</a> 
+<a href="#projectstatus">Project Status</a> 
+<a href="#author">Author</a> 
 
-#Tests
+# Tests
 The tests were written using JavaScript language
 
-# e2e - nursa_test
-Project description - Step by step:
+# Nursa_webtest
+# Project description - Step by step:
 - Visit the website https://demo.sylius.com/en_US/login
 - New user registration
 - Adding product to cart
@@ -20,9 +22,6 @@ Project description - Step by step:
 - support > page_objects > address.page
 - support > commands
 - Faker (emailfaker)
-
-# Project status: Done
-# Author: Gabriela Mattesco
 
 # API_test
 # Project description - Step by step:
@@ -37,7 +36,7 @@ All tests passed
 - support > commands
 
 # Project status: Done
-# Author: Gabriela Mattesco
+# Author: Gabriela Mattesco [See my LinkedIn](www.linkedin.com/in/gabrielamattesco/)
 
 
 
