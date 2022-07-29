@@ -1,6 +1,7 @@
 ///<reference types = "Cypress" />
 const perfil = require('../fixtures/perfil.json')
 import commands from '../support/commands_nursa'
+import addresspage from '../support/page_objects.js/address.page';
 var faker = require('faker')
 
 context('Web test Nursa', () => {
@@ -19,7 +20,7 @@ context('Web test Nursa', () => {
         cy.addproduct('M','3')
         cy.get('.five > .huge').click()
 
-        cy.preregistration(emailfaker, 'Gabriela', 'Mattesco', 'Nursa', 'Americas Avenue', 'US', 'Miami', '2222222' )
+        addresspage.DeliveryAddress(emailfaker, 'Gabriela', 'Mattesco', 'Nursa', 'Americas Avenue', 'US', 'Miami', '2222222' )
         cy.get('.item > .content').click()
         cy.get('#next-step').click()
         cy.get(':nth-child(2) > .content > .header > .required').click()
