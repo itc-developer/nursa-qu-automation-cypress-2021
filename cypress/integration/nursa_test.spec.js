@@ -10,7 +10,7 @@ context('Web test Nursa', () => {
         cy.visit('/en_US/login')
     });
     
-    it('Should add one product to the list', () => {
+    it('Should add 1 item to cart successfully', () => {
         let emailfaker = faker.internet.email()
 
         cy.get('.two > :nth-child(3) > .big').click()
