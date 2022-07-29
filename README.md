@@ -45,10 +45,10 @@ Run one of the commands below to run the tests. Examples:
 - To run the tests on the terminal, execute npx cypress run
 - To generate the report, execute npm run cy:report or visit https://dashboard.cypress.io/projects/tdz1x7/runs/2/overview
 
-# Projects status:
+# Project status:
 Done
 # Author: 
-Gabriela Mattesco [See my LinkedIn](www.linkedin.com/in/gabrielamattesco)
+Gabriela Mattesco
 
 
 
