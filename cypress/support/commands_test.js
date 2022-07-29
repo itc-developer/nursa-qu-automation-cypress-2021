@@ -1,3 +1,9 @@
+// Cypress.Commands.add('login', (Username, Password) => {
+//     cy.get('#_username').type(Username)
+//     cy.get('#_password').type(Password, { log: false })
+//     cy.get('.blue').click()
+// });
+
 Cypress.Commands.add('login', (name, lastname, emailfaker, phonenumber, password, verification) => {
     cy.get('#sylius_customer_registration_firstName').type(name)
     cy.get('#sylius_customer_registration_lastName').type(lastname)

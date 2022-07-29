@@ -4,7 +4,8 @@
     "typescript": "^4.7.4"
   },
   "scripts": {
-    "cypress:open": "cypress open"
+    "cypress:open": "cypress open",
+    "cy:report": "cypress run --record --key aaee76a1-9a44-4edd-a975-f35f301cfd61"
   },
   "name": "nursa-qa-automation-cypress-2021",
   "description": "0. nvm use v15.14.0\r 1. npm install\r 2. npm run cypress:open",

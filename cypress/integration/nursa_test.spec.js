@@ -9,6 +9,15 @@ context('Nursa Automation_test', () => {
     beforeEach(() => {
         cy.visit('/en_US/login')
     });
+
+    // beforeEach(() => {
+    //     cy.visit('en_US/login/')
+    //     cy.fixture('perfil').then((data) => {
+    //     cy.login(data.Username, data.Password)
+    //     });
+    //     cy.get('#menu > .ui > div.item').should('contain', 'Hello')
+    // });
+
     
     it('Should add 1 item to cart successfully', () => {
         let emailfaker = faker.internet.email()
@@ -21,14 +30,14 @@ context('Nursa Automation_test', () => {
         cy.get('.five > .huge').click()
 
         addresspage.DeliveryAddress(emailfaker, 'Gabriela', 'Mattesco', 'Nursa', 'Americas Avenue', 'US', 'Miami', '2222222' )
-        cy.get(':nth-child(2) > .content > .header > .required').click()
+        cy.get('.item > .content').click()
         cy.get('#next-step').click()
-        cy.get(':nth-child(2) > .content > .header > .required').click()
+        cy.get('.fluid > :nth-child(1) > .content').click()
         cy.get('#next-step').click()
         cy.get('.loadable > .huge').click()
         cy.get('#sylius-thank-you > .sub').should('contain', 'You have successfully placed an order.')
     
-          
+         
    
     });
 });

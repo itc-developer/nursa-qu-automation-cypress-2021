@@ -1,7 +1,8 @@
 # Nursa_webtest & API test - Cypress 2022
 
 <a href="#description">Description</a> 
-<a href="#functionalities">Functionalities</a> 
+<a href="#functionalities">Functionalities</a>
+<a href="#runtests">Run Tests</a> 
 <a href="#projectstatus">Project Status</a> 
 <a href="#author">Author</a> 
 
@@ -34,6 +35,13 @@ All tests passed
 # Functionalities: 
 - fixtures > perfil
 - support > commands
+
+# Run Tests
+Run one of the commands below to run the tests. Examples:
+- To open cypress, execute npx cypress open
+- To run the tests - after opening Cypress, just click on the test you want to run
+- To run the tests on the terminal, execute npx cypress run
+- To generate the report, execute npm run cy:report or visit https://dashboard.cypress.io/projects/tdz1x7/runs/2/overview
 
 # Project status: Done
 # Author: Gabriela Mattesco [See my LinkedIn](www.linkedin.com/in/gabrielamattesco/)
