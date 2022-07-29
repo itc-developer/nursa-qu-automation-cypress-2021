@@ -1,22 +1,19 @@
 /// <reference types="cypress" />
-import commands from "../support/commands_api"
+import data from "../fixtures/perfil.json";
+import command from "../support/commands_api"
+
 
 describe('API', () => {
-
     let token
     before(() => {
-        cy.token('api@example.com','sylius-api').then(tkn => { token = tkn})
+        cy.getToken(data.Username, data.Password).then(tkn => {token = tkn})
     });
-
 
     it('Should create a address resource', () => {
         cy.request({
             method: 'POST',
-            url: 'https://demo.sylius.com/api/v2/shop/addresses',
-            headers: {
-                accept: "application/ld+json", 
-                Authorization: token
-                },
+            url: '/api/v2/shop/addresses',
+            headers: {Authorization: `Bearer ${token}`},  
             body: {
                 "firstName": "Gabriela",
                 "lastName": "Mattesco",
@@ -31,43 +28,28 @@ describe('API', () => {
             },
         }).then((response) => {
             expect(response.status).to.equal(201)
-            
+    
         })
     });
 
 
-    // it('Should retrieves a address', () => {
-    //     cy.request({
-    //         method: 'GET',
-    //         url: 'https://demo.sylius.com/api/v2/admin/addresses/',
-    //         headers: {authorization: token},
-    //         body: {
-    //             "@context": "string",
-    //             "@id": "string",
-    //             "@type": "string",
-    //             "customer": "string",
-    //             "id": 0,
-    //             "firstName": "string",
-    //             "lastName": "string",
-    //             "phoneNumber": "string",
-    //             "company": "string",
-    //             "countryCode": "string",
-    //             "provinceCode": "string",
-    //             "provinceName": "string",
-    //             "street": "string",
-    //             "city": "string",
-    //             "postcode": "string"
-    //         }
+    it('Should retrieves the collection of addresses', () => {
+        cy.request({
+            method: 'GET',
+            url: '/api/v2/shop/addresses',
+            headers: { Authorization: `Bearer ${token}`}
            
-    //     }).then((response) => {
-    //         expect(response.status).to.equal(200)
+        }).then((response) => {
+            expect(response.status).to.equal(200)
+        });
         
-    //     });
+        });
            
-    // })
-        
+    })
+
+
     
-});
+
 
 
     

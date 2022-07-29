@@ -63,3 +63,4 @@ Cypress.Commands.add('address', (firstname, surname, company, address, country, 
     cy.get('#next-step').click()
 
 });
+
