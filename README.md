@@ -17,7 +17,7 @@ Functionalities:
 
 API test
 Step by step:
-Visit the website https://demo.sylius.com/
+Visit the website https://demo.sylius.com/api/v2/shop/addresses
 - Generate token
 - Create an address - Method: POST
 - Retrieves the collection of addresses - Method: GET
