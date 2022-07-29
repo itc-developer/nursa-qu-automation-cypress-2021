@@ -4,7 +4,7 @@ import commands from '../support/commands_test'
 import addresspage from '../support/page_objects.js/address.page';
 var faker = require('faker')
 
-context('Web test Nursa', () => {
+context('Nursa Automation_test', () => {
 
     beforeEach(() => {
         cy.visit('/en_US/login')
