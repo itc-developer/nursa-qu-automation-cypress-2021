@@ -9,7 +9,7 @@ describe('API', () => {
         cy.getToken(data.Username, data.Password).then(tkn => {token = tkn})
     });
 
-    it('Should create a address resource', () => {
+    it('Should create an address resource', () => {
         cy.request({
             method: 'POST',
             url: '/api/v2/shop/addresses',
