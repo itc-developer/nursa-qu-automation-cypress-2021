@@ -75,7 +75,7 @@ describe('API', () => {
     })                
     })            
     
-    it('Should delete an address', () => {
+    it('Should delete a previously registered address', () => {
         cy.registerproduct(token, "Paula", "Oliveira", "5555555", "Nursa", "55", "21", "Rio de Janeiro", "Americas Avenue", "Rio de Janeiro", "22793323")
         .then(response => {
             let id = response.body["@id"]
