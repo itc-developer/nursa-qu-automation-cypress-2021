@@ -34,7 +34,7 @@ ___________________________________________________________________________
 - Retrieves the collection of addresses - Method: GET
 - Edit a previously registered address - Method: PUT
 - Delete a previously registered address - Method: DELETE
-All tests passed
+* All tests passed
 
 # Functionalities: 
 - fixtures > perfil
