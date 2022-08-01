@@ -12,3 +12,25 @@ Cypress.Commands.add('getToken', (email, password) => {
         })
 })
 
+Cypress.Commands.add('registerproduct', (token, firstname, lastname, phonenumber, company, countryCode, provinceCode, provinceName, street, city, postcode) => {
+    cy.request({
+        method: 'POST',
+        url: '/api/v2/shop/addresses',
+        headers: {Authorization: `Bearer ${token}`},  
+        body: {
+            "firstName": firstname,
+            "lastName": lastname,
+            "phoneNumber": phonenumber,
+            "company": company,
+            "countryCode": countryCode,
+            "provinceCode": provinceCode,
+            "provinceName": provinceName,
+            "street": street,
+            "city": city,
+            "postcode": postcode
+        },
+    })
+
+})
+
+
