@@ -28,6 +28,8 @@ describe('API', () => {
             },
         }).then((response) => {
             expect(response.status).to.equal(201)
+            expect(response.body).to.have.property('city')
+            expect(response.duration).to.be.lessThan(150)
     
         })
     });
@@ -42,6 +44,7 @@ describe('API', () => {
         }).then((response) => {
             expect(response.body["hydra:member"][1].firstName).to.equal('Gabriela')
             expect(response.status).to.equal(200)
+            expect(response.duration).to.be.lessThan(150)
         });
         
     });
@@ -70,6 +73,8 @@ describe('API', () => {
                 }
         }).then((response) => {
             expect(response.status).to.equal(200)
+            expect(response.body.city).to.equal('São Paulo')
+            expect(response.duration).to.be.lessThan(150)
     
         })
     })                
@@ -87,7 +92,8 @@ describe('API', () => {
 
         }).then((response) => {
            expect(response.status).to.equal(204)
-            
+           expect(response.duration).to.be.lessThan(150)
+                   
         })
     })
 })
