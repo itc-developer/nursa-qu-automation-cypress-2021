@@ -1,6 +1,5 @@
 ///<reference types = "Cypress" />
 const perfil = require('../fixtures/perfil.json')
-import { name } from 'commander';
 import commands from '../support/commands_test'
 import addresspage from '../support/page_objects.js/address.page';
 var faker = require('faker')
@@ -60,7 +59,7 @@ context('Nursa Automation_test', () => {
 
     });
 
-    it.only('Should display a Reset message when you forget the password', () => {
+    it('Should display a Reset message when you forget the password', () => {
         let emailfaker = faker.internet.email()
 
         cy.get('.loadable > .right').click()
