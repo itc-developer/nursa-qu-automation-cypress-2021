@@ -4,9 +4,9 @@
 //     cy.get('.blue').click()
 // });
 
-Cypress.Commands.add('login', (name, lastname, emailfaker, phonenumber, password, verification) => {
-    cy.get('#sylius_customer_registration_firstName').type(name)
-    cy.get('#sylius_customer_registration_lastName').type(lastname)
+Cypress.Commands.add('login', (namefaker, lastnamefaker, emailfaker, phonenumber, password, verification) => {
+    cy.get('#sylius_customer_registration_firstName').type(namefaker)
+    cy.get('#sylius_customer_registration_lastName').type(lastnamefaker)
     cy.get('#sylius_customer_registration_email').type(emailfaker)
     cy.get('#sylius_customer_registration_phoneNumber').type(phonenumber)
     cy.get('#sylius_customer_registration_user_plainPassword_first').type(password, { log:false})
