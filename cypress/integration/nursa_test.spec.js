@@ -31,7 +31,7 @@ context('Nursa Automation_test', () => {
         cy.addproduct('M','3')
         cy.get('.five > .huge').click()
 
-        addresspage.DeliveryAddress(emailfaker, 'Gabriela', 'Mattesco', 'Nursa', 'Americas Avenue', 'US', 'Miami', '2222222' )
+        addresspage.DeliveryAddress(emailfaker, namefaker, lastnamefaker, 'Nursa', 'Americas Avenue', 'US', 'Miami', '2222222' )
         cy.get('.item > .content').click()
         cy.get('#next-step').click()
         cy.get('.fluid > :nth-child(1) > .content').click()
