@@ -10,8 +10,7 @@
 ## Run Tests
 
 In the terminal, use the commands:
-
-- `git clone git@github.com:lucasxavierlucas/nursa-qa-automation-cypress-2021`
+`
 - `npm install`
 - `npm install @faker-js/faker --save-dev`
 - `npm run cypress:open`
